@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <a href="{%url 'api:logout'%}">Logout</a>
+
+    <form  method="get" action = "{% url "api:search" %} " name = "searchform">
+      <input type="text" name="searchfield" value="">
+      {{searchform_as.p}}
+  {%csrf_token%}
+      <input type="Submit" name="" value="Search">
+
+    </form>
+
+
+    <table border= 1px>
+      <th>Reg No.</th>
+      <th>Color</th>
+      <th>Slot</th>
+      <th>level</th>
+      <th>Status</th>
+      {%for reg in reg_no_search%}
+      <tr>
+        <td>{{reg.regno}}</td>
+        <td>{{reg.color}}</td>
+        <td>{{reg.slot}}</td>
+        <td>{{reg.level}}</td>
+        <td>{{reg.status}}</td>
+      </tr>
+      {%endfor%}
+      {%for color in color_search%}
+      <tr>
+        <td>{{color.regno}}</td>
+        <td>{{color.color}}</td>
+        <td>{{color.slot}}</td>
+        <td>{{color.level}}</td>
+        <td>{{color.status}}</td>
+      </tr>
+      {%endfor%}
+    </table>
+  </body>
+</html>

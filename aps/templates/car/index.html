@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CAR</title>
+  </head>
+  <body>
+    <!-- <form  action= "search" method="get">
+      {{searchform_as.p}}
+      <input type="text" name="search" value="">
+      <input type="Submit" name="" value="Search">
+      {%csrf_token%}
+    </form> -->
+    <a href="{% url 'api:parking' %}">Add a Car</a>
+    <a href="{% url 'api:parking' %}">Free a slot</a>
+    <!-- <a href="{% url 'admin:index' %}">Django Admin Login</a> -->
+    <a href="{% url 'api:search' %}">Search</a>
+<!--
+<h3>Last 5 Transactions</h3>
+    {% if carval %}
+    <table border=1px title= "Last Input">
+      <th>Reg No.</th>
+      <th>Color </th>
+      <th>Status</th>
+      <th>Slot</th>
+      <th>Level</th>
+      {%for car in carval%}
+      <tr><td>{{car.regno}}</td><td>{{car.color}}</td><td>{{car.status}}</td><td>{{car.slot}}</td><td>{{car.level}}</td></tr>
+      {%endfor%}
+
+    </table>
+    {%else%}
+    <p> Data not found</p>
+    {%endif%} -->
+
+
+
+
+    <h3>Current Status of Slots</h3>
+
+    {% if parkval %}
+    <table border=1px>
+      <th>Level</th>
+      <th>Slot 1</th>
+      <th>Slot 2</th>
+      <th>Slot 3</th>
+      <th>Slot 4</th>
+      <th>Slot 5</th>
+      <th>Slot 6</th>
+      <th>Slot 7</th>
+      <th>Slot 8</th>
+      <th>Slot 9</th>
+      <th>Slot 10</th>
+      {%for park in parkval%}
+      <tr>
+        <td>LEVEL {{park.level}}</td>
+        <td>{%if park.slot1 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+        </td>
+        <td>{%if park.slot2 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot3 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot4 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot5 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot6 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot7 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot8 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot9 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+      </td><td>{%if park.slot10 == 1%}
+        OCCUPIED
+        {%else%}
+        VACANT
+        {%endif%}
+        </td>
+
+
+      </tr>
+      {%endfor%}
+    </table>
+    {%else%}
+    <p> Data not found</p>
+    {%endif%}
+
+    <!-- <img src="{% static "images/django.jpg" %}" alt="SORRY NOT FOUND"> -->
+    <!-- {{ insert_me }} -->
+
+  </body>
+</html>
