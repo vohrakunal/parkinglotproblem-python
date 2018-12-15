@@ -70,9 +70,9 @@ Open URL
 ## Build With
 * [Python3](https://www.python.org/downloads/) - Python3 
 * [Django](https://docs.djangoproject.com/en/1.11/) - The web framework used
-* [MySQL](https://dev.mysql.com/downloads/connector/python/) - Database
+* [MySQL](https://dev.mysql.com/downloads/connector/python/) - Backend Database
 
 ## Authors
 * **Kunal Vohra** -*Owner and Developer*- [kv](https://github.com/kunalvohra94)
-> For any suggestions or improvements write to me.. 
+> For any suggestions or improvements write to me. 
 
