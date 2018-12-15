@@ -6,9 +6,9 @@ ver 2.2  *Designed by kv*
     Python 3.4+
     A supported version of Django (currently 1.11+)
 
-### Steps To Install
+## Steps To Install
 
-Install django *ver 1.11 LTS*
+### Install django *ver 1.11 LTS*
 ```
 $ pip install django==1.11
 ```
@@ -18,14 +18,15 @@ Import aps.sql using
 ```
 $ mysql -u <mysql_username> -p aps < aps.sql
 ```
-Change MySQL USER:'mysql_username', PASS:'mysql_password', HOST and PORT address in aps/settings [default values: (USER': 'django', 'PASSWORD':'django', 'HOST': 'localhost','PORT': '')]
 
-Run Migrations
+> change MySQL USER:'mysql_username', PASS:'mysql_password', HOST and PORT address in aps/settings [default values: (USER': 'django', 'PASSWORD':'django', 'HOST': 'localhost','PORT': '')]
+
+### Run Migrations
 > change directory to home_folder/aps
 > python manage.py makemigrations
 > python manage.py migrate
 
-Create a USER
+### Create a USER
 ```
 $ python manage.py createsuperuser
 Username (leave blank to use 'default_user'):
@@ -36,7 +37,7 @@ Password (again):
 Superuser created successfully.
 ```
 
-Run Server
+### Run Server
 ```
 $ python manage.py runserver
 ```
