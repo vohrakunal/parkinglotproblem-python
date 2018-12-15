@@ -6,7 +6,28 @@ ver 2.2  *Designed by kv*
     Python 3.4+
     A supported version of Django (currently 1.11+)
 
-## Steps To Install
+## Files Description
+
+#### Current Status of slots (Occupied/Vacant)
+> http://www.your_hostname/api/
+
+#### Add or Delete a Parking Slot and view currently parked cars
+> http://www.your_hostname/api/parking/
+
+#### Superuser login
+> http://www.your_hostname/api/login/
+
+#### Search
+> http://www.your_hostname/api/search/
+> > Can only be accessed if logged in
+> > Search using car registration number and car color and get output in the form of parking slot, parking level, registration number and color
+
+#### Logout
+> http://www.your_hostname/api/logout/
+> > Clear all login values
+
+
+## Deployment
 
 ### Install django *ver 1.11 LTS*
 ```
@@ -45,25 +66,13 @@ Open URL
 > hostname:8000/
 
 
-## Description
 
-#### Current Status of slots (Occupied/Vacant)
-> http://www.your_hostname/api/
+## Build With
+* [Python3](https://www.python.org/downloads/) - Python3 
+* [Django](https://docs.djangoproject.com/en/1.11/) - The web framework used
+* [MySQL](https://dev.mysql.com/downloads/connector/python/) - Database
 
-#### Add or Delete a Parking Slot and view currently parked cars
-> http://www.your_hostname/api/parking/
-
-#### Superuser login
-> http://www.your_hostname/api/login/
-
-#### Search
-> http://www.your_hostname/api/search/
-> > Can only be accessed if logged in
-> > Search using car registration number and car color and get output in the form of parking slot, parking level, registration number and color
-
-#### Logout
-> http://www.your_hostname/api/logout/
-> > Clear all login values
-
-
+## Authors
+* **Kunal Vohra** -*Owner and Developer*- [kv](https://github.com/kunalvohra94)
+> For any suggestions or improvements write to me.. 
 
