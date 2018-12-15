@@ -45,24 +45,25 @@ Open URL
 > hostname:8000/
 
 
-Description
-1. http://www.your_hostname/api/
-    -> Current Status of slots (Occupied/Vacant)
+## Description
 
-2. http://www.your_hostname/api/parking/
-    -> Add or Delete a Parking Slot
-    -> View Currently parked cars
+#### Current Status of slots (Occupied/Vacant)
+> http://www.your_hostname/api/
 
-3. http://www.your_hostname/api/login/
-    -> User Superuser username and password to login
+#### Add or Delete a Parking Slot and view currently parked cars
+> http://www.your_hostname/api/parking/
 
-4. http://www.your_hostname/api/search/
-    -> Can only be accessed if logged in
-    -> Search using car registration number and car color and get output in the form of parking slot, parking level, registration number and color
+#### Superuser login
+> http://www.your_hostname/api/login/
 
-5. http://www.your_hostname/api/logout/
-    -> Clear all login values
+#### Search
+> http://www.your_hostname/api/search/
+> > Can only be accessed if logged in
+> > Search using car registration number and car color and get output in the form of parking slot, parking level, registration number and color
+
+#### Logout
+> http://www.your_hostname/api/logout/
+> > Clear all login values
 
 
-# # KNOWN ISSUES
-1. 
+
