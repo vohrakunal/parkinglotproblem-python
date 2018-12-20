@@ -74,5 +74,5 @@ Open URL
 
 ## Authors
 * **Kunal Vohra** -*Owner and Developer*- [kv](https://github.com/kunalvohra94)
-> For any suggestions or improvements write to me. 
+>  For any suggestions or improvements or other queries write to me [kv] Email(mailto:kunalvohra1994@gmail.com)
 
